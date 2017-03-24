@@ -13,3 +13,6 @@ setwd("C:\\Users\\User\\Dropbox\\temp\\Hackathons\\kaggle\\Quora\\")
 train<-read.csv(".\\Data\\train.csv")
 summary(train)
 head(train)
+
+tr_Clean$Quest1 <- cleanup(tr_Clean$Quest1)
+tr_Clean$Quest2 <- cleanup(tr_Clean$Quest2)
